@@ -11,7 +11,6 @@ const doConnectionToRedis = async () => {
 		return;
 	}
 
-	const url = `${process.env.REDIS_STRING_CONNECTION}`;
 	client = await redis.createClient({
 		url: process.env.REDIS_STRING_CONNECTION,
 	});
